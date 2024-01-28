@@ -3,16 +3,16 @@ import Image from "next/image";
 import brandImg from "@/assets/images/lavish-lux-brand-logo.png";
 import { useState } from "react";
 import Link from "next/link";
-import variables from "@/styles/sass/variables.module.scss";
+import styles from "@/styles/utilities.module.scss";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
   return (
-    <header className={`${variables.secondaryBgColor} bg-opacity-80 shadow-md text-black sticky top-0`}>
+    <header className={`${styles.secondaryBgColor} shadow-md sticky top-0`}>
       <nav className="py-4 relative">
         <div className="flex justify-between items-center px-5">
-          <div>
+          <Link href={"/"}>
             <Image
               src={brandImg}
               alt="Lavish Lux Brand Image"
@@ -24,7 +24,7 @@ const Header = () => {
                 height: "auto",
               }}
             />
-          </div>
+          </Link>
           <div>
             {showMobileMenu ? (
               <RxCross1
@@ -48,17 +48,19 @@ const Header = () => {
               : "hidden"
           }`}
         >
-          <ul className="flex flex-col gap-y-16 justify-center items-center mt-10">
-            <li className="px-5 border-b text-center text-2xl">
+          <ul
+            className={`${styles.navMenu} flex flex-col gap-y-16 justify-center items-center mt-10`}
+          >
+            <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
               <Link href="/">About</Link>
             </li>
-            <li className="px-5 border-b text-center text-2xl">
+            <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
               <Link href="/">Services</Link>
             </li>
-            <li className="px-5 border-b text-center text-2xl">
+            <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
               <Link href="/">Booking</Link>
             </li>
-            <li className="px-5 border-b text-center text-2xl">
+            <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
               <Link href="/">Conatact</Link>
             </li>
           </ul>

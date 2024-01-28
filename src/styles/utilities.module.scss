@@ -1,0 +1,16 @@
+$bg-primary: #fde0da;
+$bg-secondary: #ffffff;
+$text-primary: #333;
+
+.primaryBgColor {
+  background: $bg-primary;
+}
+.secondaryBgColor {
+  background: $bg-secondary;
+}
+
+.navMenu {
+  li {
+    color: $text-primary;
+  }
+}
