@@ -1,6 +1,6 @@
-$bg-primary: #fde0da;
-$bg-secondary: #ffffff;
-$text-primary: #333;
+// Utilities
+@import "_variables";
+
 
 .primaryBgColor {
   background: $bg-primary;

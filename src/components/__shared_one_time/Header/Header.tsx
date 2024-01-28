@@ -25,7 +25,7 @@ const Header = () => {
               }}
             />
           </Link>
-          <div>
+          <div className="cursor-pointer">
             {showMobileMenu ? (
               <RxCross1
                 onClick={() => setShowMobileMenu(!showMobileMenu)}
