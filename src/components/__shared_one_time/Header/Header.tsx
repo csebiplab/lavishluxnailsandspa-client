@@ -3,12 +3,13 @@ import Image from "next/image";
 import brandImg from "@/assets/images/lavish-lux-brand-logo.png";
 import { useState } from "react";
 import Link from "next/link";
+import variables from "@/styles/sass/variables.module.scss";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
   return (
-    <header className="bg-black bg-opacity-80 shadow-md text-white sticky top-0">
+    <header className={`${variables.secondaryBgColor} bg-opacity-80 shadow-md text-black sticky top-0`}>
       <nav className="py-4 relative">
         <div className="flex justify-between items-center px-5">
           <div>
@@ -41,7 +42,7 @@ const Header = () => {
 
         {/* For Mobile */}
         <div
-          className={`py-4 bg-black absolute left-0 bottom-2 w-full border-t-2 border-t-cyan-800 ${
+          className={`py-4 bg-white absolute left-0 bottom-2 w-full border-t-2 border-t-cyan-800 ${
             showMobileMenu
               ? "block transition-opacity duration-300 opacity-100 transform translate-y-full min-h-screen"
               : "hidden"
