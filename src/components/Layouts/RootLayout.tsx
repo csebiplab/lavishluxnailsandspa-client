@@ -8,13 +8,13 @@ interface RootLayoutProps {
 
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
-    <div>
+    <>
       <Header />
-      <div>
+      {/* <main>
         {children}
-      </div>
-      <Footer />
-    </div>
+      </main>
+      <Footer /> */}
+    </>
   );
 };
 

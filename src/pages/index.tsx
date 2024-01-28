@@ -9,9 +9,9 @@ const HomePage = () => {
       <Head>
         <title>Home | Lavish Lux Nails And SPA</title>
       </Head>
-      <div>
+      <section>
         <HomeMainComponent />
-      </div>
+      </section>
     </div>
   );
 };
