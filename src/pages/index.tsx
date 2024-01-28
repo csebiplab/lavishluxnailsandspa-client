@@ -1,9 +1,23 @@
+import RootLayout from "@/components/Layouts/RootLayout";
+import HomeMainComponent from "@/components/__shared_one_time/Home/HomeMainComponent";
+import Head from "next/head";
+import { ReactElement } from "react";
+
 const HomePage = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">This is home page</h1>
+      <Head>
+        <title>Home | Lavish Lux Nails And SPA</title>
+      </Head>
+      <div>
+        <HomeMainComponent />
+      </div>
     </div>
   );
 };
 
 export default HomePage;
+
+HomePage.getLayout = function getLayout(page: ReactElement) {
+  return <RootLayout>{page}</RootLayout>;
+};
