@@ -1,4 +1,4 @@
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import Image from "next/image";
 import brandImg from "@/assets/images/lavish-lux-brand-logo.png";
 import { useState } from "react";
@@ -25,10 +25,17 @@ const Header = () => {
             />
           </div>
           <div>
-            <RxHamburgerMenu
-              onClick={() => setShowMobileMenu(!showMobileMenu)}
-              className="w-6 h-6"
-            />
+            {showMobileMenu ? (
+              <RxCross1
+                onClick={() => setShowMobileMenu(!showMobileMenu)}
+                className="w-6 h-6"
+              />
+            ) : (
+              <RxHamburgerMenu
+                onClick={() => setShowMobileMenu(!showMobileMenu)}
+                className="w-6 h-6"
+              />
+            )}
           </div>
         </div>
 
@@ -40,17 +47,17 @@ const Header = () => {
               : "hidden"
           }`}
         >
-          <ul className="flex flex-col gap-y-4 justify-center items-end">
-            <li className="px-5 border-b w-full text-center">
+          <ul className="flex flex-col gap-y-16 justify-center items-center mt-10">
+            <li className="px-5 border-b text-center text-2xl">
               <Link href="/">About</Link>
             </li>
-            <li className="px-5 border-b w-full text-center">
+            <li className="px-5 border-b text-center text-2xl">
               <Link href="/">Services</Link>
             </li>
-            <li className="px-5 border-b w-full text-center">
+            <li className="px-5 border-b text-center text-2xl">
               <Link href="/">Booking</Link>
             </li>
-            <li className="px-5 border-b w-full text-center">
+            <li className="px-5 border-b text-center text-2xl">
               <Link href="/">Conatact</Link>
             </li>
           </ul>

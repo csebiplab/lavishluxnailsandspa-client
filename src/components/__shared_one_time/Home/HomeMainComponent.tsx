@@ -1,7 +1,7 @@
 
 const HomeMainComponent = () => {
     return (
-        <div className='min-h-[3000px]'>
+        <div className='min-h-screen'>
             home main component
         </div>
     );
