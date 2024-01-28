@@ -1,8 +1,7 @@
-import React from 'react';
 
 const HomeMainComponent = () => {
     return (
-        <div>
+        <div className='min-h-[3000px]'>
             home main component
         </div>
     );

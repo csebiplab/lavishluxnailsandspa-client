@@ -10,10 +10,10 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      {/* <main>
+      <main>
         {children}
       </main>
-      <Footer /> */}
+      <Footer />
     </>
   );
 };
