@@ -9,7 +9,9 @@ const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
 
   return (
-    <header className={`${styles.secondaryBgColor} shadow-md sticky top-0`}>
+    <header
+      className={`${styles.secondaryBgColor} opacity-90 shadow-md sticky top-0 z-50`}
+    >
       <nav className="py-4 relative">
         <div className="flex justify-between items-center px-5">
           <Link href={"/"}>
@@ -42,10 +44,10 @@ const Header = () => {
 
         {/* For Mobile */}
         <div
-          className={`py-4 bg-white absolute left-0 bottom-2 w-full border-t-2 border-t-cyan-800 ${
+          className={`py-4 bg-white absolute left-0 w-full border-t-2 border-t-cyan-800 ${
             showMobileMenu
-              ? "block transition-opacity duration-300 opacity-100 transform translate-y-full min-h-screen"
-              : "hidden"
+              ? "bottom-2 transition-opacity duration-300 bg-opacity-95 transform translate-y-full min-h-screen"
+              : "-top-96"
           }`}
         >
           <ul

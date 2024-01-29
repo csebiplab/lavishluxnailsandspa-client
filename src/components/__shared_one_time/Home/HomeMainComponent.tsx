@@ -1,8 +1,9 @@
+import BannerCarousel from "../__ui/BannerCarousel";
 
 const HomeMainComponent = () => {
     return (
         <div className='min-h-screen'>
-            home main component
+            <BannerCarousel />
         </div>
     );
 };
