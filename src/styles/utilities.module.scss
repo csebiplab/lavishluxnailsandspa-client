@@ -1,12 +1,23 @@
 // Utilities
 @import "_variables";
 
-
 .primaryBgColor {
   background: $bg-primary;
 }
 .secondaryBgColor {
   background: $bg-secondary;
+}
+
+.bgBtn {
+  background-color: $bg-btn;
+}
+
+.bgBtn:hover {
+  background-color: $bg-btn-hover;
+}
+
+.textSecondary {
+  color: $bg-secondary;
 }
 
 .navMenu {
