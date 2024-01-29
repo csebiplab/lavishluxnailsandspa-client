@@ -1,16 +1,32 @@
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import Image from "next/image";
 import brandImg from "@/assets/images/lavish-lux-brand-logo.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "@/styles/utilities.module.scss";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header
-      className={`${styles.secondaryBgColor} opacity-90 shadow-md sticky top-0 z-50`}
+      className={`${styles.secondaryBgColor} ${
+        scrollY > 30 && "sticky top-0"
+      } shadow-md z-50`}
     >
       <nav className="py-4 relative">
         <div className="flex justify-between items-center px-5">
@@ -44,10 +60,10 @@ const Header = () => {
 
         {/* For Mobile */}
         <div
-          className={`py-4 bg-white absolute left-0 w-full border-t-2 border-t-cyan-800 ${
+          className={`py-4 bg-white bg-opacity-95 absolute left-0 w-full border-t-2 border-t-cyan-800 z-50 ${
             showMobileMenu
-              ? "bottom-2 transition-opacity duration-300 bg-opacity-95 transform translate-y-full min-h-screen"
-              : "-top-96"
+              ? "bottom-2 transition-opacity duration-300 transform translate-y-full min-h-screen"
+              : "-top-[25rem]"
           }`}
         >
           <ul
