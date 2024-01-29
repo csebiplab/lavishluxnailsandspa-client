@@ -1,10 +1,12 @@
 import styles from "@/styles/utilities.module.scss";
 
 const BookNow = () => {
-  const { bgBtn, textSecondary } = styles;
+  const { bgBtn, textSecondary, textPrimary } = styles;
   return (
     <div className="inline-flex flex-col">
-      <h1 className="text-center md:text-start text-3xl font-extrabold inline">
+      <h1
+        className={`text-center md:text-start text-3xl font-extrabold ${textPrimary}`}
+      >
         Lavish Lux Nails & Spa - Best Nail Salon Mississauga
       </h1>
       <button

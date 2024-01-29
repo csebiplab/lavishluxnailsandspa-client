@@ -14,10 +14,23 @@
 
 .bgBtn:hover {
   background-color: $bg-btn-hover;
+  transition: all ease-in-out 0.6s;
 }
 
 .textSecondary {
   color: $bg-secondary;
+}
+
+.textPrimary {
+  color: $text-primary;
+}
+
+.borderClr {
+  border-bottom: 1px solid $border-clr;
+}
+
+.borderBClr {
+  border-bottom: 2px solid $border-clr;
 }
 
 .navMenu {

@@ -28,7 +28,7 @@ const Header = () => {
         scrollY > 30 && "sticky top-0"
       } shadow-md z-50`}
     >
-      <nav className="py-4 relative">
+      <nav className="py-4 relative mx-auto container">
         <div className="flex justify-between items-center px-5">
           <Link href={"/"}>
             <Image
