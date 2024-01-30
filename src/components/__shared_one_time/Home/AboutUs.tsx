@@ -26,7 +26,7 @@ const AboutUs = () => {
           />
         </div>
         <div className="w-full px-2">
-          <p className="text-xl">
+          <p className="text-xl text-justify">
             <span className="text-6xl">L</span> avish Lux Nails & Spa stands
             as the epitome of indulgence and excellence in the heart of
             Mississauga, earning its reputation as the best nail salon in the
