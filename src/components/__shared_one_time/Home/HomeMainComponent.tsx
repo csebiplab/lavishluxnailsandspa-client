@@ -3,6 +3,7 @@ import AboutUs from "./AboutUs";
 import BookNow from "./BookNow";
 import FaqAccordian from "./FaqAccordian";
 import FeaturedSection from "./FeaturedSection";
+import LocationMap from "./LocationMap";
 
 const HomeMainComponent = () => {
   return (
@@ -35,7 +36,7 @@ const HomeMainComponent = () => {
         <FaqAccordian />
       </section>
       <section className="mt-16 container mx-auto">
-        {/* <FaqAccordian /> */}
+        <LocationMap />
       </section>
     </div>
   );
