@@ -4,6 +4,7 @@ import brandImg from "@/assets/images/lavish-lux-brand-logo.png";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "@/styles/utilities.module.scss";
+import AnimatedBorderNav from "../__ui/AnimatedBorderNav";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
@@ -30,35 +31,63 @@ const Header = () => {
     >
       <nav className="py-4 relative mx-auto container">
         <div className="flex justify-between items-center px-5">
-          <Link href={"/"}>
-            <Image
-              src={brandImg}
-              alt="Lavish Lux Brand Image"
-              width={135}
-              height={24.5}
-              priority={true}
-              style={{
-                width: "auto",
-                height: "auto",
-              }}
-            />
-          </Link>
-          <div className="cursor-pointer">
-            {showMobileMenu ? (
-              <RxCross1
-                onClick={() => setShowMobileMenu(!showMobileMenu)}
-                className="w-6 h-6"
+          <div>
+            <Link href={"/"}>
+              <Image
+                src={brandImg}
+                alt="Lavish Lux Brand Image"
+                width={135}
+                height={24.5}
+                priority={true}
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
               />
-            ) : (
-              <RxHamburgerMenu
-                onClick={() => setShowMobileMenu(!showMobileMenu)}
-                className="w-6 h-6"
-              />
-            )}
+            </Link>
+          </div>
+          {/* For Desktop View */}
+          <AnimatedBorderNav />
+          {/* <div className="hidden md:block">
+            <ul className={`navMenu flex justify-center items-center gap-x-12`}>
+              <li className="text-center text-2xl">
+                <Link href="/">About</Link>
+              </li>
+              <li className="text-center text-2xl">
+                <Link href="/">Services</Link>
+              </li>
+              <li className="text-center text-2xl">
+                <Link href="/">Booking</Link>
+              </li>
+              <li className="text-center text-2xl">
+                <Link href="/">Conatact</Link>
+              </li>
+            </ul>
+          </div> */}
+
+          <div className="cursor-pointer block md:hidden">
+            <div className="flex items-center gap-x-6">
+              <button
+                className={`px-4 py-2 rounded-md text-sm bgBtn textSecondary transition duration-300 ease-in-out`}
+              >
+                Book Now
+              </button>
+              {showMobileMenu ? (
+                <RxCross1
+                  onClick={() => setShowMobileMenu(!showMobileMenu)}
+                  className="w-6 h-6"
+                />
+              ) : (
+                <RxHamburgerMenu
+                  onClick={() => setShowMobileMenu(!showMobileMenu)}
+                  className="w-6 h-6"
+                />
+              )}
+            </div>
           </div>
         </div>
 
-        {/* For Mobile */}
+        {/* For Mobile Veiw*/}
         <div
           className={`py-4 bg-white bg-opacity-95 absolute left-0 w-full border-t-2 border-t-cyan-800 z-50 ${
             showMobileMenu
