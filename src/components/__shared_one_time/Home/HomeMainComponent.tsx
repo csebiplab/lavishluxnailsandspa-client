@@ -1,6 +1,7 @@
 import BannerCarousel from "../__ui/BannerCarousel";
 import AboutUs from "./AboutUs";
 import BookNow from "./BookNow";
+import FaqAccordian from "./FaqAccordian";
 import FeaturedSection from "./FeaturedSection";
 
 const HomeMainComponent = () => {
@@ -20,6 +21,21 @@ const HomeMainComponent = () => {
       </section>
       <section className="mt-16 container mx-auto">
         {/* <FeaturedSection /> */}
+      </section>
+      <section className="mt-16 container mx-auto">
+        {/* <FeaturedSection /> */}
+      </section>
+      <section className="mt-16 container mx-auto">
+        {/* <FeaturedSection /> */}
+      </section>
+      <section className="mt-16 container mx-auto">
+        {/* <FeaturedSection /> */}
+      </section>
+      <section className="mt-16 container mx-auto">
+        <FaqAccordian />
+      </section>
+      <section className="mt-16 container mx-auto">
+        {/* <FaqAccordian /> */}
       </section>
     </div>
   );
