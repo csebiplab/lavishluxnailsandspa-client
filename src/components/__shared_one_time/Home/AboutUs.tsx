@@ -26,7 +26,7 @@ const AboutUs = () => {
           />
         </div>
         <div className="w-full px-2">
-          <p className="text-xl text-justify">
+          {/* <p className="text-xl text-justify">
             <span className="text-6xl">L</span> avish Lux Nails & Spa stands
             as the epitome of indulgence and excellence in the heart of
             Mississauga, earning its reputation as the best nail salon in the
@@ -35,7 +35,17 @@ const AboutUs = () => {
             executed manicures to awe-inspiring nail art, every visit to Lavish
             Lux is an escape into a realm of beauty and relaxation. The talented
             team of nail technicians is committed...
-          </p>
+          </p> */}
+          <article className="drop-cap article text-justify leading-7">
+            Lavish Lux Nails & Spa stands as the epitome of indulgence and
+            excellence in the heart of Mississauga, earning its reputation as
+            the best nail salon in the area. This luxurious haven redefines the
+            nail care experience, offering a perfect blend of opulence and
+            skill. From meticulously executed manicures to awe-inspiring nail
+            art, every visit to Lavish Lux is an escape into a realm of beauty
+            and relaxation. The talented team of nail technicians is
+            committed...
+          </article>
           <button
             className={`mt-12 ${bgBtn} ${textSecondary} px-4 py-2 rounded-md`}
           >

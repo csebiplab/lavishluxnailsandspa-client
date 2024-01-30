@@ -3,6 +3,7 @@ import AboutUs from "./AboutUs";
 import BookNow from "./BookNow";
 import FaqAccordian from "./FaqAccordian";
 import FeaturedSection from "./FeaturedSection";
+import GlamourAndRelaxationSection from "./GlamourAndRelaxationSection";
 import LocationMap from "./LocationMap";
 
 const HomeMainComponent = () => {
@@ -21,7 +22,7 @@ const HomeMainComponent = () => {
         <FeaturedSection />
       </section>
       <section className="mt-16 container mx-auto">
-        {/* <FeaturedSection /> */}
+        <GlamourAndRelaxationSection />
       </section>
       <section className="mt-16 container mx-auto">
         {/* <FeaturedSection /> */}
