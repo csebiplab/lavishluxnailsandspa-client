@@ -41,15 +41,6 @@ const NailsSaloonDiaries = () => {
             individual style and needs.
           </li>
           <div>
-            {!showMore && (
-              <button
-                onClick={() => setShowMore(true)}
-                className={`px-4 py-1 rounded-sm bgBtn textSecondary mx-auto`}
-              >
-                Read More
-              </button>
-            )}
-
             {showMore && (
               <>
                 <li>
@@ -85,6 +76,21 @@ const NailsSaloonDiaries = () => {
                 </li>
               </>
             )}
+            <div onClick={() => setShowMore(!showMore)} className="mt-2">
+              {!showMore ? (
+                <button
+                  className={`px-4 py-1 rounded-sm bgBtn textSecondary mx-auto`}
+                >
+                  Read More
+                </button>
+              ) : (
+                <button
+                  className={`px-4 py-1 rounded-sm bgBtn textSecondary mx-auto`}
+                >
+                  Read Less
+                </button>
+              )}
+            </div>
           </div>
         </ol>
       </div>

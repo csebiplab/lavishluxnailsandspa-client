@@ -4,6 +4,7 @@ import BookNow from "./BookNow";
 import FaqAccordian from "./FaqAccordian";
 import FeaturedSection from "./FeaturedSection";
 import GlamourAndRelaxationSection from "./GlamourAndRelaxationSection";
+import HighQualityNailsSection from "./HighQualityNailsSection";
 import LocationMap from "./LocationMap";
 import NailsSaloonDiaries from "./NailsSaloonDiaries";
 
@@ -29,7 +30,7 @@ const HomeMainComponent = () => {
         <NailsSaloonDiaries />
       </section>
       <section className="mt-16 container mx-auto">
-        {/* <FeaturedSection /> */}
+        <HighQualityNailsSection />
       </section>
       <section className="mt-16 container mx-auto">
         {/* <FeaturedSection /> */}
