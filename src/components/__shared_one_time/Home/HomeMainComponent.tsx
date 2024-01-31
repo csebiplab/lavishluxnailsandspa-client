@@ -7,6 +7,7 @@ import GlamourAndRelaxationSection from "./GlamourAndRelaxationSection";
 import HighQualityNailsSection from "./HighQualityNailsSection";
 import LocationMap from "./LocationMap";
 import NailsSaloonDiaries from "./NailsSaloonDiaries";
+import RevitalizeYourNailsSection from "./RevitalizeYourNailsSection";
 
 const HomeMainComponent = () => {
   return (
@@ -33,7 +34,7 @@ const HomeMainComponent = () => {
         <HighQualityNailsSection />
       </section>
       <section className="mt-16 container mx-auto">
-        {/* <FeaturedSection /> */}
+        <RevitalizeYourNailsSection />
       </section>
       <section className="mt-16 container mx-auto">
         <FaqAccordian />

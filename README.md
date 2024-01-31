@@ -3,7 +3,7 @@
 First, clone the repo:
 
 ```bash
-git clone repo-remote-url
+git clone https://github.com/csebiplab/lavishluxnailsandspa-client.git
 ```
 
 Then, ready the development server:
