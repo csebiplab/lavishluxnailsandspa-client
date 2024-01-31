@@ -105,6 +105,12 @@ export default function FaqAccordian() {
           </AccordionContent>
         </AccordionPanel>
       </Accordion>
+      <div className="mt-1">
+        <p className="text-xl textPrimary font-semibold">
+          Remember to contact the specific nail salon for the most accurate and
+          up-to-date information.
+        </p>
+      </div>
     </div>
   );
 }
