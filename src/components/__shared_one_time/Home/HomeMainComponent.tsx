@@ -1,5 +1,6 @@
 import BannerCarousel from "../__ui/BannerCarousel";
 import AboutUs from "./AboutUs";
+import BenefitsOfGoodNailSalonsSection from "./BenefitsOfGoodNailSalonsSection";
 import BookNow from "./BookNow";
 import FaqAccordian from "./FaqAccordian";
 import FeaturedSection from "./FeaturedSection";
@@ -34,8 +35,14 @@ const HomeMainComponent = () => {
         <HighQualityNailsSection />
       </section>
       <section className="mt-16 container mx-auto">
-        <RevitalizeYourNailsSection />
+        <BenefitsOfGoodNailSalonsSection />
       </section>
+      {/* <section className="mt-16 container mx-auto">
+        <RevitalizeYourNailsSection />
+      </section> */}
+      {/* <section className="mt-16 container mx-auto">
+        <RevitalizeYourNailsSection />
+      </section> */}
       <section className="mt-16 container mx-auto">
         <FaqAccordian />
       </section>
