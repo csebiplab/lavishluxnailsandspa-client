@@ -9,6 +9,8 @@ import HighQualityNailsSection from "./HighQualityNailsSection";
 import LocationMap from "./LocationMap";
 import NailsSaloonDiaries from "./NailsSaloonDiaries";
 import RevitalizeYourNailsSection from "./RevitalizeYourNailsSection";
+import WhyChooseOurNailSalonsSection from "./WhyChooseOurNailSalonsSection";
+import WorkingProcessOfOurLavishLuxNailsSection from "./WorkingProcessOfOurLavishLuxNailsSection";
 
 const HomeMainComponent = () => {
   return (
@@ -37,14 +39,17 @@ const HomeMainComponent = () => {
       <section className="mt-16 container mx-auto">
         <BenefitsOfGoodNailSalonsSection />
       </section>
-      {/* <section className="mt-16 container mx-auto">
-        <RevitalizeYourNailsSection />
-      </section> */}
+      <section className="mt-16 container mx-auto">
+        <WorkingProcessOfOurLavishLuxNailsSection />
+      </section>
       {/* <section className="mt-16 container mx-auto">
         <RevitalizeYourNailsSection />
       </section> */}
       <section className="mt-16 container mx-auto">
         <FaqAccordian />
+      </section>
+      <section className="mt-16 container mx-auto">
+        <WhyChooseOurNailSalonsSection />
       </section>
       <section className="mt-16 container mx-auto">
         <LocationMap />
