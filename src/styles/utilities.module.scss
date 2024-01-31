@@ -17,6 +17,16 @@
   transition: all ease-in-out 0.6s;
 }
 
+.btnOutline {
+  background: $bg-secondary;
+  transition: all ease-in-out 0.5s;
+  border: 1px solid $bg-btn;
+}
+
+.btnOutline:hover {
+  background: $bg-btn;
+}
+
 .textSecondary {
   color: $bg-secondary;
 }
