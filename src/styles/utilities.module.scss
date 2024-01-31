@@ -112,3 +112,14 @@
   margin-right: 0.75em;
   // font-style: italic;
 }
+
+// Animated gallery (This design could be change)
+.sample-slider {
+  width: 70%;
+}
+.sample-slider img {
+  width: 100%;
+}
+.sample-slider .swiper-wrapper{
+  transition-timing-function: linear;
+}

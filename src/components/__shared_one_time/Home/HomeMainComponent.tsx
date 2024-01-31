@@ -1,4 +1,5 @@
 import BannerCarousel from "../__ui/BannerCarousel";
+import SwipperTestComponent from "../__ui/SwipperTestComponent";
 import AboutUs from "./AboutUs";
 import BenefitsOfGoodNailSalonsSection from "./BenefitsOfGoodNailSalonsSection";
 import BookNow from "./BookNow";
@@ -22,6 +23,7 @@ const HomeMainComponent = () => {
       <section className="mt-16 container mx-auto">
         <BookNow />
       </section>
+      <SwipperTestComponent />
       <section className="mt-16 container mx-auto">
         <AboutUs />
       </section>
