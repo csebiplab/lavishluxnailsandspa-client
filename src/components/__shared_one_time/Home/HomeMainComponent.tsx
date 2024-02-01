@@ -1,8 +1,8 @@
 import BannerCarousel from "../__ui/BannerCarousel";
+import SwiperHeroSection from "../__ui/SwipperHeroSection";
 import SwipperTestComponent from "../__ui/SwipperTestComponent";
 import AboutUs from "./AboutUs";
 import BenefitsOfGoodNailSalonsSection from "./BenefitsOfGoodNailSalonsSection";
-import BookNow from "./BookNow";
 import FaqAccordian from "./FaqAccordian";
 import FeaturedSection from "./FeaturedSection";
 import GlamourAndRelaxationSection from "./GlamourAndRelaxationSection";
@@ -17,13 +17,10 @@ import WorkingProcessOfOurLavishLuxNailsSection from "./WorkingProcessOfOurLavis
 const HomeMainComponent = () => {
   return (
     <div className="min-h-screen">
-      <section>
-        <BannerCarousel />
+      <section className="container mx-auto">
+        <SwiperHeroSection />
+        {/* <BannerCarousel /> */}
       </section>
-      <section className="mt-16 container mx-auto">
-        <BookNow />
-      </section>
-      <SwipperTestComponent />
       <section className="mt-16 container mx-auto">
         <AboutUs />
       </section>
@@ -48,14 +45,17 @@ const HomeMainComponent = () => {
       <section className="mt-16 container mx-auto">
         <WorkingProcessOfOurLavishLuxNailsSection />
       </section>
-      {/* <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto">
         <RevitalizeYourNailsSection />
-      </section> */}
+      </section>
       <section className="mt-16 container mx-auto">
         <FaqAccordian />
       </section>
       <section className="mt-16 container mx-auto">
         <WhyChooseOurNailSalonsSection />
+      </section>
+      <section className="mt-16 container mx-auto">
+        <SwipperTestComponent />
       </section>
       <section className="mt-16 container mx-auto">
         <LocationMap />
