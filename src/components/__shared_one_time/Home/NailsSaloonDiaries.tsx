@@ -1,13 +1,16 @@
+import Image from "next/image";
 import { useState } from "react";
+import DiariesImg from "@/assets/images/diaries.webp";
 
 const NailsSaloonDiaries = () => {
   const [showMore, setShowMore] = useState<boolean>(false);
 
   return (
-    <div className="flex justify-center">
-      <div className="w-2/3">
-        <h2 className={`title font-semibold textPrimary`}>
-          Nails Salon Diaries: Where Beauty Meets Precision
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6">
+      <div className="">
+        <h2 className={`title textPrimary`}>
+          <span className="font-semibold">Nails Salon Diaries:</span> Where
+          Beauty Meets Precision
         </h2>
         <ol className="list-decimal mt-4 flex flex-col gap-y-3 text-xl">
           <li>
@@ -93,6 +96,14 @@ const NailsSaloonDiaries = () => {
             </div>
           </div>
         </ol>
+      </div>
+      <div className="flex items-center h-full md:py-24">
+        <Image
+          src={DiariesImg}
+          alt="about-us"
+          priority={true}
+          className="mx-auto w-full h-auto rounded-md"
+        />
       </div>
     </div>
   );
