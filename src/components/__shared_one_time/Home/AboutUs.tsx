@@ -1,28 +1,25 @@
-import styles from "@/styles/utilities.module.scss";
 import AboutUsImg from "@/assets/images/lavish_about_us.jpg";
 import Image from "next/image";
-
-const { bgBtn, textSecondary, textPrimary, borderBClr } = styles;
 
 const AboutUs = () => {
   return (
     <div className="">
       <h2
-        className={`text-2xl font-extrabold max-w-fit mx-auto flex justify-center ${textPrimary} ${borderBClr}`}
+        className={`text-2xl font-extrabold max-w-fit mx-auto flex justify-center textPrimary borderBClr`}
       >
         About Us
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-40 gap-y-6 mt-4">
         <div className="w-full">
           <Image
             src={AboutUsImg}
             alt="about-us"
             priority={true}
-            className="mx-auto w-full md:w-4/5 h-auto rounded-md"
+            className="mx-auto w-full h-auto rounded-md"
           />
         </div>
         <div className="w-full px-2">
-          <article className="drop-cap w-full md:w-3/4 text-justify leading-7">
+          <article className="drop-cap w-full text-justify leading-7">
             Lavish Lux Nails & Spa stands as the epitome of indulgence and
             excellence in the heart of Mississauga, earning its reputation as
             the best nail salon in the area. This luxurious haven redefines the
@@ -32,9 +29,7 @@ const AboutUs = () => {
             and relaxation. The talented team of nail technicians is
             committed...
           </article>
-          <button
-            className={`mt-12 ${bgBtn} ${textSecondary} px-4 py-2 rounded-md`}
-          >
+          <button className={`mt-12 bgBtn textSecondary px-4 py-2 rounded-md`}>
             Know More...
           </button>
         </div>
