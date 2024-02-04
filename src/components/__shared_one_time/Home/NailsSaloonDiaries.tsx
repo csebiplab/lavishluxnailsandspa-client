@@ -6,13 +6,13 @@ const NailsSaloonDiaries = () => {
   const [showMore, setShowMore] = useState<boolean>(false);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 textPrimary">
       <div className="">
         <h2 className={`title textPrimary`}>
           <span className="font-semibold">Nails Salon Diaries:</span> Where
           Beauty Meets Precision
         </h2>
-        <ol className="list-decimal mt-4 flex flex-col gap-y-3 text-xl">
+        <ol className="list-decimal mt-2 flex flex-col gap-y-2 text-xl">
           <li>
             <span className="font-semibold text-2xl">
               Tailored Treatments for Healthy Nails:
@@ -33,19 +33,20 @@ const NailsSaloonDiaries = () => {
             advancements, promising a nail experience that's both timeless and
             cutting-edge.
           </li>
-          <li>
-            <span className="font-semibold text-2xl">
-              Interactive Nail Consultations:
-            </span>{" "}
-            Understanding that each client is unique, we offer interactive
-            consultations before every session. Our technicians take the time to
-            listen to your preferences, lifestyle, and concerns, ensuring that
-            the nail design and treatment recommended align perfectly with your
-            individual style and needs.
-          </li>
+
           <div>
             {showMore && (
               <>
+                <li>
+                  <span className="font-semibold text-2xl">
+                    Interactive Nail Consultations:
+                  </span>{" "}
+                  Understanding that each client is unique, we offer interactive
+                  consultations before every session. Our technicians take the
+                  time to listen to your preferences, lifestyle, and concerns,
+                  ensuring that the nail design and treatment recommended align
+                  perfectly with your individual style and needs.
+                </li>
                 <li>
                   <span className="font-semibold text-2xl">
                     A Relaxing Haven for Self-Care:
@@ -79,7 +80,7 @@ const NailsSaloonDiaries = () => {
                 </li>
               </>
             )}
-            <div onClick={() => setShowMore(!showMore)} className="mt-2">
+            <div onClick={() => setShowMore(!showMore)} className="mt-2 inline">
               {!showMore ? (
                 <button
                   className={`px-4 py-1 rounded-sm bgBtn textSecondary mx-auto`}
@@ -97,12 +98,12 @@ const NailsSaloonDiaries = () => {
           </div>
         </ol>
       </div>
-      <div className="flex items-center h-full md:py-24">
+      <div className="flex items-center h-full">
         <Image
           src={DiariesImg}
           alt="about-us"
           priority={true}
-          className="mx-auto w-full h-auto rounded-md"
+          className="mx-auto w-full h-96 rounded-md"
         />
       </div>
     </div>
