@@ -6,7 +6,7 @@ const BenefitsOfGoodNailSalonsSection = () => {
   return (
     <div className="flex justify-center">
       <div className="w-2/3">
-        <h2 className={`text-2xl font-extrabold textPrimary`}>
+        <h2 className={`title font-semibold textPrimary`}>
           Benefits of good nail salons in Mississauga
         </h2>
         <ol className="list-decimal mt-4 flex flex-col gap-y-3 text-xl">

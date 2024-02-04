@@ -2,7 +2,7 @@ const WhyChooseOurNailSalonsSection = () => {
   return (
     <div className="flex justify-center">
       <div className="w-2/3">
-        <h2 className={`text-2xl font-extrabold textPrimary`}>
+        <h2 className={`title font-semibold textPrimary`}>
           Why Choose Our Nail Salons in Mississauga?
         </h2>
         <div className="mt-4 text-xl">

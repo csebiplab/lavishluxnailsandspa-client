@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <div className="">
       <h2
-        className={`text-2xl font-extrabold max-w-fit mx-auto flex justify-center textPrimary borderBClr`}
+        className={`title font-semibold max-w-fit mx-auto flex justify-center textPrimary borderBClr`}
       >
         About Us
       </h2>

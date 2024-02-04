@@ -6,7 +6,7 @@ const WorkingProcessOfOurLavishLuxNailsSection = () => {
   return (
     <div className="flex justify-center">
       <div className="w-2/3">
-        <h2 className={`text-2xl font-extrabold textPrimary`}>
+        <h2 className={`title font-semibold textPrimary`}>
           Working Process of our Lavish Lux Nails Mississauga
         </h2>
         <ul className="list-disc mt-4 flex flex-col gap-y-3 text-xl">

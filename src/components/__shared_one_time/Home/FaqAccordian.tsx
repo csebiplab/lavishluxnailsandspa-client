@@ -9,7 +9,7 @@ export default function FaqAccordian() {
   return (
     <div>
       <div className="mb-4">
-        <h2 className="text-3xl font-extrabold">
+        <h2 className="title font-semibold">
           Frequently Asked Questions for our Nail Places Mississauga
         </h2>
         <p className="mt-2 text-xl">

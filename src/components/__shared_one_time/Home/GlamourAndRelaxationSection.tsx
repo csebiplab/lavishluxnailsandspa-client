@@ -4,12 +4,14 @@ const GlamourAndRelaxationSection = () => {
   return (
     <div>
       <h2
-        className={`text-2xl font-extrabold max-w-fit mx-auto flex justify-center textPrimary borderBClr`}
+        className={`title font-semibold max-w-fit mx-auto flex justify-center textPrimary borderBClr text-center`}
       >
-        Glamour and Relaxation Collide with Mississauga Nails and Spa
+        Glamour and Relaxation Collide with
+        <br />
+        Mississauga Nails and Spa
       </h2>
-      <div className="primaryBgColor mt-2 shadow-2xl p-3">
-        <div className="text-xl leading-9 textPrimary flex flex-col md:flex-row justify-center items-center mx-auto gap-8 md:w-9/12 text-justify">
+      <div className="mt-2 py-6">
+        <div className="text-xl leading-9 textPrimary flex flex-col md:flex-row justify-between items-center mx-auto gap-8 w-full text-justify">
           <p>
             Indulge in the perfect fusion of glamour and relaxation at Lavish
             Lux Nails & Spa. As you step into our chic and welcoming sanctuary,

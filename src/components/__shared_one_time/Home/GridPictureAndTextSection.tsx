@@ -17,7 +17,7 @@ const GridPictureAndTextSection = () => {
             />
           </div>
           <div className="textPrimary flex flex-col justify-center items-center gap-y-6 w-full md:w-5/6">
-            <h2 className="text-4xl font-extrabold">
+            <h2 className="title font-semibold">
               Is the best nail salon costly?
             </h2>
             <p className="text-xl leading-8">
@@ -40,7 +40,7 @@ const GridPictureAndTextSection = () => {
             />
           </div>
           <div className="order-1 textPrimary flex flex-col justify-center items-center gap-y-6 w-full md:w-5/6">
-            <h2 className="text-4xl font-extrabold">
+            <h2 className="title font-semibold">
               Designed your nails with the best spa in Mississauga
             </h2>
             <p className="text-xl leading-8">
@@ -64,7 +64,7 @@ const GridPictureAndTextSection = () => {
             />
           </div>
           <div className="textPrimary flex flex-col justify-center items-center gap-y-6 w-full md:w-5/6">
-            <h2 className="text-4xl font-extrabold">
+            <h2 className="title font-semibold">
               Nail Artistry and Beyond: Why Nail Salons Deserve Your Attention?
             </h2>
             <p className="text-xl leading-8">
