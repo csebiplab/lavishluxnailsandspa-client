@@ -17,47 +17,47 @@ import WorkingProcessOfOurLavishLuxNailsSection from "./WorkingProcessOfOurLavis
 const HomeMainComponent = () => {
   return (
     <div className="min-h-screen">
-      <section className="container mx-auto">
+      <section className="mt-4 container mx-auto px-5">
         <SwiperHeroSection />
         {/* <BannerCarousel /> */}
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <AboutUs />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <FeaturedSection />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <GridPictureAndTextSection />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <GlamourAndRelaxationSection />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <NailsSaloonDiaries />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <HighQualityNailsSection />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <BenefitsOfGoodNailSalonsSection />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <WorkingProcessOfOurLavishLuxNailsSection />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <RevitalizeYourNailsSection />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <FaqAccordian />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <WhyChooseOurNailSalonsSection />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <SwipperTestComponent />
       </section>
-      <section className="mt-16 container mx-auto">
+      <section className="mt-16 container mx-auto px-5">
         <LocationMap />
       </section>
     </div>

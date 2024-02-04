@@ -10,7 +10,7 @@ import BookNow from "../Home/BookNow";
 
 export default function SwiperHeroSection() {
   return (
-    <div className="px-10 mx-auto mt-4">
+    <div className="">
       <Swiper loop={true} navigation={true} modules={[Navigation]} className="">
         <SwiperSlide>
           <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-x-8 gap-y-4 w-full">
