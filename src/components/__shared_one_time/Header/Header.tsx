@@ -31,18 +31,19 @@ const Header = () => {
     >
       <nav className="py-4 relative mx-auto container">
         <div className="flex justify-between items-center px-5">
-          <div>
+          <div className="">
             <Link href={"/"}>
               <Image
                 src={brandImg}
                 alt="Lavish Lux Brand Image"
-                width={135}
+                width={130}
                 height={24.5}
                 priority={true}
-                style={{
-                  width: "auto",
-                  height: "auto",
-                }}
+                // style={{
+                //   width: "auto",
+                //   height: "auto",
+                // }}
+                className="h-auto w-44"
               />
             </Link>
           </div>
