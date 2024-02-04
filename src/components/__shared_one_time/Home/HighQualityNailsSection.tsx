@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useState } from "react";
 import lavishGridPicture from "@/assets/images/lavish-picture-1.webp";
 
 const HighQualityNailsSection = () => {
@@ -11,7 +10,7 @@ const HighQualityNailsSection = () => {
           High-quality nail salon in Mississauga
         </h2>
         <div className="w-1/12 border-b-2 borderClr primaryBgColor mt-3" />
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-between mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-y-4 mt-10">
           <div className="col-span-2">
             <ul className="list-disc mt-4 grid grid-cols-2 gap-y-5 text-xl w-full textPrimary">
               <li>Exquisite Nail Artistry</li>
