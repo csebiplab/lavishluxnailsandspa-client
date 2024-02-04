@@ -12,7 +12,7 @@ const HighQualityNailsSection = () => {
         <div className="w-1/12 border-b-2 borderClr primaryBgColor mt-3" />
         <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-y-4 mt-10">
           <div className="col-span-2">
-            <ul className="list-disc mt-4 grid grid-cols-2 gap-y-5 text-xl w-full textPrimary">
+            <ul className="marker:text-red-700 list-outside list-disc mt-4 grid grid-cols-2 gap-y-5 text-xl w-full textPrimary">
               <li>Exquisite Nail Artistry</li>
               <li>Premium Quality Products</li>
               <li>Impeccable Sanitation Standards</li>
