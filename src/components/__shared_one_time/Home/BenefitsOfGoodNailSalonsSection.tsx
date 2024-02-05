@@ -1,15 +1,17 @@
+import Image from "next/image";
 import { useState } from "react";
+import DiariesImg from "@/assets/images/diaries.webp";
 
 const BenefitsOfGoodNailSalonsSection = () => {
   const [showMore, setShowMore] = useState<boolean>(false);
 
   return (
-    <div className="flex justify-center">
-      <div className="w-2/3">
-        <h2 className={`title font-semibold textPrimary`}>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 textPrimary">
+      <div className="order-2">
+        <h2 className={`title textPrimary font-semibold`}>
           Benefits of good nail salons in Mississauga
         </h2>
-        <ol className="list-decimal mt-4 flex flex-col gap-y-3 text-xl">
+        <ol className="list-decimal mt-2 flex flex-col gap-y-2 text-xl">
           <li>
             <span className="font-semibold text-2xl">
               Professional Expertise and Skill:
@@ -30,28 +32,20 @@ const BenefitsOfGoodNailSalonsSection = () => {
             prioritization of hygiene not only enhances the client experience
             but also reduces the risk of infections.
           </li>
-          <li>
-            <span className="font-semibold text-2xl">
-              Customized Nail Care Solutions:
-            </span>{" "}
-            Leading nail salons understand that every client has unique
-            preferences and nail care needs. So we offer personalized
-            consultations to tailor services such as nail shaping, color
-            selection, and treatments to individual requirements, resulting in a
-            more satisfying and personalized salon experience.
-          </li>
+
           <div>
             {showMore && (
               <>
                 <li>
                   <span className="font-semibold text-2xl">
-                    Relaxing Ambiance and Customer Comfort:
+                    Customized Nail Care Solutions:
                   </span>{" "}
-                  Our nail salon in Mississauga creates a tranquil and
-                  comfortable atmosphere for our clients. The ambiance is
-                  carefully curated to induce relaxation, making the salon visit
-                  not just a beauty treatment but also a rejuvenating experience
-                  for the mind and body.
+                  Leading nail salons understand that every client has unique
+                  preferences and nail care needs. So we offer personalized
+                  consultations to tailor services such as nail shaping, color
+                  selection, and treatments to individual requirements,
+                  resulting in a more satisfying and personalized salon
+                  experience.
                 </li>
                 <li>
                   <span className="font-semibold text-2xl">
@@ -75,7 +69,7 @@ const BenefitsOfGoodNailSalonsSection = () => {
                 </li>
               </>
             )}
-            <div onClick={() => setShowMore(!showMore)} className="mt-2">
+            <div onClick={() => setShowMore(!showMore)} className="mt-2 inline">
               {!showMore ? (
                 <button
                   className={`px-4 py-1 rounded-sm bgBtn textSecondary mx-auto`}
@@ -90,17 +84,16 @@ const BenefitsOfGoodNailSalonsSection = () => {
                 </button>
               )}
             </div>
-            <div className="mt-2">
-              <p className="text-xl font-semibold">
-                <span className="text-yellow-600 mr-1">*</span>
-                In summary, choosing a good nail salon in Mississauga provides
-                not only aesthetic benefits but also a holistic and personalized
-                approach to nail care, emphasizing hygiene, quality, and client
-                well-being.
-              </p>
-            </div>
           </div>
         </ol>
+      </div>
+      <div className="order-1 flex items-center h-full">
+        <Image
+          src={DiariesImg}
+          alt="about-us"
+          priority={true}
+          className="mx-auto w-full h-96 rounded-md"
+        />
       </div>
     </div>
   );
