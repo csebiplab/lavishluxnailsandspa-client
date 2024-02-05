@@ -1,25 +1,41 @@
+import Image from "next/image";
+import WhyLavish from "@/assets/images/why-nail-spa.jpg";
+
 const WhyChooseOurNailSalonsSection = () => {
   return (
     <div className="flex justify-center">
-      <div className="w-2/3">
-        <h2 className={`title font-semibold textPrimary`}>
-          Why Choose Our Nail Salons in Mississauga?
-        </h2>
-        <div className="mt-4 text-xl">
-          <p>
-            Indulge in the epitome of nail care excellence at our Nail Salons in
-            Mississauga. Our commitment to providing an unparalleled experience
-            sets us apart. Immerse yourself in a world where precision meets
-            creativity, and pampering is an art form. Our skilled technicians
-            bring a wealth of expertise to every manicure and pedicure, ensuring
-            meticulous attention to detail and the use of premium products.
-            Beyond the impeccable service, our salon boasts a serene ambiance,
-            creating a haven for relaxation and self-care. Elevate your nail
-            care routine with us, where luxury meets expertise, making every
-            visit an exceptional and rejuvenating experience. Choose our Nail
-            Salons in Mississauga for a touch of glamour and a commitment to the
-            highest standards in nail artistry and care.
-          </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4 h-min">
+        <div>
+          <h2 className={`title font-semibold textPrimary`}>
+            Why Choose Our Nail Salons in Mississauga?
+          </h2>
+          <div className="w-1/12 border-b-2 borderClr primaryBgColor mt-3" />
+          <div className="mt-4 textPrimary leading-8">
+            <p>
+              Indulge in the epitome of nail care excellence at our Nail Salons
+              in Mississauga. Our commitment to providing an unparalleled
+              experience sets us apart. Immerse yourself in a world where
+              precision meets creativity, and pampering is an art form. Our
+              skilled technicians bring a wealth of expertise to every manicure
+              and pedicure, ensuring meticulous attention to detail and the use
+              of premium products. Beyond the impeccable service, our salon
+              boasts a serene ambiance, creating a haven for relaxation and
+              self-care. Elevate your nail care routine with us, where luxury
+              meets expertise, making every visit an exceptional and
+              rejuvenating experience. Choose our Nail Salons in Mississauga for
+              a touch of glamour and a commitment to the highest standards in
+              nail artistry and care.
+            </p>
+          </div>
+        </div>
+        <div className="w-full">
+          <Image
+            src={WhyLavish}
+            alt="lavish picture"
+            width={400}
+            height={500}
+            className="h-[30rem] w-full"
+          />
         </div>
       </div>
     </div>

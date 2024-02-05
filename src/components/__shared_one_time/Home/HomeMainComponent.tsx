@@ -1,6 +1,5 @@
-import BannerCarousel from "../__ui/BannerCarousel";
+import SwipperGalleryComponent from "../__ui/SwipperGalleryComponent";
 import SwiperHeroSection from "../__ui/SwipperHeroSection";
-import SwipperTestComponent from "../__ui/SwipperTestComponent";
 import AboutUs from "./AboutUs";
 import BenefitsOfGoodNailSalonsSection from "./BenefitsOfGoodNailSalonsSection";
 import FaqAccordian from "./FaqAccordian";
@@ -11,6 +10,7 @@ import HighQualityNailsSection from "./HighQualityNailsSection";
 import LocationMap from "./LocationMap";
 import NailsSaloonDiaries from "./NailsSaloonDiaries";
 import RevitalizeYourNailsSection from "./RevitalizeYourNailsSection";
+import UserReviewSection from "./UserReviewSection";
 import WhyChooseOurNailSalonsSection from "./WhyChooseOurNailSalonsSection";
 import WorkingProcessOfOurLavishLuxNailsSection from "./WorkingProcessOfOurLavishLuxNailsSection";
 
@@ -55,7 +55,10 @@ const HomeMainComponent = () => {
         <WhyChooseOurNailSalonsSection />
       </section>
       <section className="mt-32 container mx-auto px-5">
-        <SwipperTestComponent />
+        <SwipperGalleryComponent />
+      </section>
+      <section className="mt-32 container mx-auto px-5">
+        <UserReviewSection />
       </section>
       <section className="mt-32 container mx-auto px-5">
         <LocationMap />
