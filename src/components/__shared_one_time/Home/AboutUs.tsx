@@ -9,7 +9,7 @@ const AboutUs = () => {
       >
         About Us
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-40 gap-y-6 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 mt-4">
         <div className="w-full">
           <Image
             src={AboutUsImg}
@@ -26,12 +26,16 @@ const AboutUs = () => {
             nail care experience, offering a perfect blend of opulence and
             skill. From meticulously executed manicures to awe-inspiring nail
             art, every visit to Lavish Lux is an escape into a realm of beauty
-            and relaxation. The talented team of nail technicians is
-            committed...
+            and relaxation. The talented team of nail technicians is committed
+            to delivering unparalleled service, ensuring that each client
+            receives personalized attention and leaves with impeccably styled
+            nails. Step into Lavish Lux Nails & Spa for a pampering session that
+            goes beyond expectations, setting a new standard for elegance and
+            sophistication in Mississauga's thriving beauty scene.
           </article>
-          <button className={`mt-12 bgBtn textSecondary px-4 py-2 rounded-md`}>
+          {/* <button className={`mt-12 bgBtn textSecondary px-4 py-2 rounded-md`}>
             Know More...
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
