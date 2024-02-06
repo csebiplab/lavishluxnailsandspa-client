@@ -127,3 +127,12 @@
 .sample-slider .swiper-wrapper {
   transition-timing-function: linear;
 }
+
+
+// Media queries for extra large screen
+@media only screen and (min-width: 1536px) {
+  .container-custom {
+    max-width: 1536px;
+    margin: 0 auto;
+  }
+}

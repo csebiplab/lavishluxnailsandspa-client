@@ -27,10 +27,10 @@ const Header = () => {
     <header
       className={`${styles.secondaryBgColor} ${
         scrollY > 30 && "sticky top-0"
-      } shadow-md z-50`}
+      } shadow-md z-50 mx-auto container-custom px-5 md:px-[6.5rem]`}
     >
-      <nav className="py-4 relative mx-auto container">
-        <div className="flex justify-between items-center px-5">
+      <nav className="py-4 relative">
+        <div className="flex justify-between items-center">
           <div className="">
             <Link href={"/"}>
               <Image
@@ -48,7 +48,10 @@ const Header = () => {
             </Link>
           </div>
           {/* For Desktop View */}
-          <AnimatedBorderNav />
+          <div className="">
+            <AnimatedBorderNav />
+          </div>
+
           {/* <div className="hidden md:block">
             <ul className={`navMenu flex justify-center items-center gap-x-12`}>
               <li className="text-center text-2xl">

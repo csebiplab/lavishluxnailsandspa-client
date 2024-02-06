@@ -3,7 +3,7 @@ import Link from "next/link";
 const AnimatedBorderNav = () => {
   return (
     <div className="hidden md:block">
-      <div className="navbar-desktop">
+      <div className="">
         <Link className="nav-link nav-link-fade-up" href="#">
           About
         </Link>
@@ -14,7 +14,7 @@ const AnimatedBorderNav = () => {
           Booking
         </Link>
         <Link className="nav-link nav-link-fade-up" href="#">
-          Conatact
+          Contact
         </Link>
       </div>
     </div>

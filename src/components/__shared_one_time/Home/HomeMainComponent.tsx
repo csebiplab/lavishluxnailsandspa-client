@@ -17,50 +17,50 @@ import WorkingProcessOfOurLavishLuxNailsSection from "./WorkingProcessOfOurLavis
 const HomeMainComponent = () => {
   return (
     <div className="min-h-screen">
-      <section className="mt-4 container mx-auto px-5">
+      <section className="mt-4 container mx-auto px-5 md:px-[4.33rem]">
         <SwiperHeroSection />
         {/* <BannerCarousel /> */}
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <AboutUs />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <FeaturedSection />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <GridPictureAndTextSection />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <GlamourAndRelaxationSection />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <NailsSaloonDiaries />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <HighQualityNailsSection />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <BenefitsOfGoodNailSalonsSection />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <WorkingProcessOfOurLavishLuxNailsSection />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <RevitalizeYourNailsSection />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <FaqAccordian />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <WhyChooseOurNailSalonsSection />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <SwipperGalleryComponent />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <UserReviewSection />
       </section>
-      <section className="mt-32 container mx-auto px-5">
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <LocationMap />
       </section>
     </div>
