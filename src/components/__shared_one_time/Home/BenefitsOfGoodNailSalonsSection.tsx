@@ -11,7 +11,7 @@ const BenefitsOfGoodNailSalonsSection = () => {
         <h2 className={`title textPrimary font-semibold`}>
           Benefits of good nail salons in Mississauga
         </h2>
-        <ol className="list-decimal mt-2 flex flex-col gap-y-2 text-xl">
+        <ol className="marker:text-red-700 marker:font-extrabold list-inside list-decimal mt-2 flex flex-col gap-y-2 text-xl">
           <li>
             <span className="font-semibold text-2xl">
               Professional Expertise and Skill:

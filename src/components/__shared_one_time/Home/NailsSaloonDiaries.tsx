@@ -12,7 +12,7 @@ const NailsSaloonDiaries = () => {
           <span className="font-semibold">Nails Salon Diaries:</span> Where
           Beauty Meets Precision
         </h2>
-        <ol className="list-decimal mt-2 flex flex-col gap-y-2 text-xl">
+        <ol className="list-decimal list-inside marker:text-red-700 marker:font-extrabold mt-2 flex flex-col gap-y-2 text-xl">
           <li>
             <span className="font-semibold text-2xl">
               Tailored Treatments for Healthy Nails:
