@@ -61,8 +61,8 @@ export default function SwipperGalleryComponent() {
         //   slideShadows: true,
         // }}
       >
-        {galImgs.map((imgUrl) => (
-          <SwiperSlide className="m-2">
+        {galImgs.map((imgUrl, i) => (
+          <SwiperSlide key={i} className="m-2">
             <Image
               width={200}
               height={200}
@@ -95,8 +95,8 @@ export default function SwipperGalleryComponent() {
           slideShadows: true,
         }}
       >
-        {galImgs.map((imgUrl) => (
-          <SwiperSlide className="m-2">
+        {galImgs.map((imgUrl, i) => (
+          <SwiperSlide key={i} className="m-2">
             <Image
               width={200}
               height={200}

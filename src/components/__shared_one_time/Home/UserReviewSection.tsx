@@ -5,7 +5,32 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
+
+// Swiper slider breakpoints Object
+const breakpoints = {
+  0: {
+    slidesPerView: 1,
+  },
+  400: {
+    slidesPerView: 2,
+  },
+  639: {
+    slidesPerView: 3,
+  },
+  865: {
+    slidesPerView: 3,
+  },
+  1000: {
+    slidesPerView: 4,
+  },
+  1500: {
+    slidesPerView: 5,
+  },
+  1700: {
+    slidesPerView: 6,
+  },
+};
 
 const UserReviewSection = () => {
   return (
@@ -13,36 +38,17 @@ const UserReviewSection = () => {
       <Swiper
         navigation={true}
         loop={true}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         slidesPerView={4}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-          },
-          400: {
-            slidesPerView: 2,
-          },
-          639: {
-            slidesPerView: 3,
-          },
-          865: {
-            slidesPerView: 4,
-          },
-          1000: {
-            slidesPerView: 5,
-          },
-          1500: {
-            slidesPerView: 6,
-          },
-          1700: {
-            slidesPerView: 7,
-          },
-        }}
+        breakpoints={breakpoints}
         spaceBetween={50}
+        autoplay={{
+          delay: 3000,
+        }}
         className=""
       >
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((__, i) => (
-          <SwiperSlide key={i} className="w-full md:w-auto">
+          <SwiperSlide key={i}>
             <ReviewCard />
           </SwiperSlide>
         ))}
