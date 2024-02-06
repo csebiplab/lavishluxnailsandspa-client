@@ -19,7 +19,7 @@ const AboutUs = () => {
           />
         </div>
         <div className="w-full px-2">
-          <article className="drop-cap w-full text-justify leading-7">
+          <article className="drop-cap w-full text-justify leading-7 text-18px">
             Lavish Lux Nails & Spa stands as the epitome of indulgence and
             excellence in the heart of Mississauga, earning its reputation as
             the best nail salon in the area. This luxurious haven redefines the

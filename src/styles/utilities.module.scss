@@ -109,8 +109,8 @@
 // }
 
 .drop-cap::first-letter {
-  -webkit-initial-letter: 4;
-  initial-letter: 4;
+  -webkit-initial-letter: 3;
+  initial-letter: 3;
   color: $text-secondary;
   font-weight: 500;
   margin-right: 0.75em;
@@ -126,6 +126,10 @@
 }
 .sample-slider .swiper-wrapper {
   transition-timing-function: linear;
+}
+
+.text-18px {
+  font-size: 18px;
 }
 
 
