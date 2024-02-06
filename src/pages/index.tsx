@@ -5,14 +5,14 @@ import { ReactElement } from "react";
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Home | Lavish Lux Nails And SPA</title>
       </Head>
       <section>
         <HomeMainComponent />
       </section>
-    </div>
+    </>
   );
 };
 
