@@ -17,7 +17,6 @@ const galImgs = [
   GalImg5,
   GalImg6,
   GalImg7,
-  GalImg8,
   GalImg5,
   GalImg2,
 ];
@@ -36,7 +35,9 @@ export default function SwipperGalleryComponent() {
   // SwiperCore.use([Autoplay]);
 
   return (
-    <>
+    <div>
+      <h2 className="text-4xl font-bold textPrimary">Our Galleries</h2>
+      <div className="w-20 borderBClr mt-1 mb-3" />
       <Swiper
         className="sample-slider w-full"
         modules={[Autoplay]}
@@ -50,6 +51,9 @@ export default function SwipperGalleryComponent() {
         }}
         slidesPerView={7}
         speed={3000}
+        allowTouchMove={false}
+        // allowSlideNext={false}
+        // allowSlidePrev={false}
         // grid={{
         //   rows: 2,
         // }}
@@ -84,16 +88,17 @@ export default function SwipperGalleryComponent() {
         }}
         slidesPerView={7}
         speed={3000}
+        allowTouchMove={false}
         // grid={{
         //   rows: 2,
         // }}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
+        // coverflowEffect={{
+        //   rotate: 50,
+        //   stretch: 0,
+        //   depth: 100,
+        //   modifier: 1,
+        //   slideShadows: true,
+        // }}
       >
         {galImgs.map((imgUrl, i) => (
           <SwiperSlide key={i} className="m-2">
@@ -107,6 +112,6 @@ export default function SwipperGalleryComponent() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }
