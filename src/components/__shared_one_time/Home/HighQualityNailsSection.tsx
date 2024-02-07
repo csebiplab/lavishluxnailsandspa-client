@@ -1,5 +1,5 @@
 import Image from "next/image";
-import lavishGridPicture from "@/assets/images/lavish-picture-1.webp";
+import LavishHighQualityNails from "@/assets/images/lavish-high-quality-nails.avif";
 
 const HighQualityNailsSection = () => {
   return (
@@ -89,11 +89,11 @@ const HighQualityNailsSection = () => {
           </div>
           <div className="w-full">
             <Image
-              src={lavishGridPicture}
+              src={LavishHighQualityNails}
               alt="lavish picture"
               width={500}
               height={300}
-              className="h-2/3 w-full"
+              className="min-h-screen w-full"
             />
           </div>
         </div>

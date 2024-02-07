@@ -1,5 +1,5 @@
 import Image from "next/image";
-import lavishGridPicture from "@/assets/images/lavish-picture-1.webp";
+import LavishRevitalizeNails from "@/assets/images/lavish-revitalize-nails.avif";
 
 const RevitalizeYourNailsSection = () => {
   return (
@@ -30,7 +30,7 @@ const RevitalizeYourNailsSection = () => {
           </div>
           <div className="w-full order-1">
             <Image
-              src={lavishGridPicture}
+              src={LavishRevitalizeNails}
               alt="lavish picture"
               width={500}
               height={300}

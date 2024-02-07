@@ -1,13 +1,23 @@
 import Image from "next/image";
-import lavishGridPicture from "@/assets/images/lavish-picture-1.webp";
+import LavishWorkingProcess from "@/assets/images/lavish-working-process.jpg";
 
 const WorkingProcessOfOurLavishLuxNailsSection = () => {
   return (
     <div className="flex justify-center">
       <div className="w-full">
-        <h2 className={`title textPrimary md:w-2/3 font-semibold`}>
-          Working Process of our Lavish Lux Nails Mississauga
-        </h2>
+        <div className="mt-4 flex">
+          <h2 className={`title textPrimary font-semibold`}>
+            Working Process of our Lavish Lux Nails Mississauga
+          </h2>
+          <p className="text-base mt-8">
+            <span className="text-yellow-600 mr-1">*</span>
+            In essence, Lavish Lux Nails Mississauga goes beyond the
+            conventional nail salon, offering an unparalleled blend of artistic
+            excellence, luxury, and personalized care to elevate your nail care
+            experience.
+          </p>
+        </div>
+
         <div className="w-1/12 border-b-2 borderClr primaryBgColor mt-3" />
         <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-y-4 mt-10">
           <div className="col-span-2">
@@ -26,22 +36,13 @@ const WorkingProcessOfOurLavishLuxNailsSection = () => {
           </div>
           <div className="w-full">
             <Image
-              src={lavishGridPicture}
+              src={LavishWorkingProcess}
               alt="lavish picture"
               width={500}
               height={300}
               className="h-56 w-full"
             />
           </div>
-        </div>
-        <div className="mt-4">
-          <p className="text-xl font-semibold">
-            <span className="text-yellow-600 mr-1">*</span>
-            In essence, Lavish Lux Nails Mississauga goes beyond the
-            conventional nail salon, offering an unparalleled blend of artistic
-            excellence, luxury, and personalized care to elevate your nail care
-            experience.
-          </p>
         </div>
       </div>
     </div>

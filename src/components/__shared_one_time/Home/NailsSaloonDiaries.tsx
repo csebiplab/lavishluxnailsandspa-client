@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import DiariesImg from "@/assets/images/diaries.webp";
+import LavishDiaries from "@/assets/images/lavish-nails-saloon-diaries.jpg";
 
 const NailsSaloonDiaries = () => {
   const [showMore, setShowMore] = useState<boolean>(false);
@@ -100,7 +100,7 @@ const NailsSaloonDiaries = () => {
       </div>
       <div className="flex items-center h-full">
         <Image
-          src={DiariesImg}
+          src={LavishDiaries}
           alt="about-us"
           priority={true}
           className="mx-auto w-full h-96 rounded-md"
