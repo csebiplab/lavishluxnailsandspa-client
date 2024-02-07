@@ -19,7 +19,6 @@ const HomeMainComponent = () => {
     <div className="min-h-screen">
       <section className="mt-4 container mx-auto px-5 md:px-[4.33rem]">
         <SwiperHeroSection />
-        {/* <BannerCarousel /> */}
       </section>
       <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <AboutUs />

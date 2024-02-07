@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import HeroBanner from "@/assets/images/lavish-hero-banner.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -7,6 +8,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 import BookNow from "../Home/BookNow";
+import Image from "next/image";
 
 export default function SwiperHeroSection() {
   return (
@@ -15,10 +17,12 @@ export default function SwiperHeroSection() {
         <SwiperSlide>
           <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-x-8 gap-y-4 w-full">
             <div className="flex justify-center md:justify-end">
-              <img
-                src="https://www.glosslab.com/hubfs/Glosslab_2.2.22_2494%20(1).jpg"
-                alt="..."
-                className="h-atuo w-full md:h-5/6"
+              <Image
+                src={HeroBanner}
+                alt="Lavish Hero Banner"
+                height={1000}
+                width={600}
+                className="h-atuo w-full md:h-[32rem]"
               />
             </div>
             <div className="flex items-center h-full w-full md:w-3/4">
