@@ -1,6 +1,7 @@
 import Image from "next/image";
-import lavishGridPicture from "@/assets/images/lavish-picture-1.webp";
-import OutlineButton from "../__ui/OutlineButton";
+import IsLavishCostly from "@/assets/images/is-lavish-costly.jpg";
+import DesignNailsWithLavish from "@/assets/images/lavish-design-nails.jpg";
+import DesignNailsArtistry from "@/assets/images/Lavish-nail-artistry.jpg";
 
 const GridPictureAndTextSection = () => {
   return (
@@ -9,7 +10,7 @@ const GridPictureAndTextSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4">
           <div>
             <Image
-              src={lavishGridPicture}
+              src={IsLavishCostly}
               alt="lavish picture"
               width={400}
               height={400}
@@ -57,7 +58,7 @@ const GridPictureAndTextSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4">
           <div className="order-2">
             <Image
-              src={lavishGridPicture}
+              src={DesignNailsWithLavish}
               alt="lavish picture"
               width={400}
               height={400}
@@ -101,7 +102,7 @@ const GridPictureAndTextSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4">
           <div>
             <Image
-              src={lavishGridPicture}
+              src={DesignNailsArtistry}
               alt="lavish picture"
               width={400}
               height={400}
