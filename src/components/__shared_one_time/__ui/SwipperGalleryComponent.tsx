@@ -68,9 +68,9 @@ export default function SwipperGalleryComponent() {
         {galImgs.map((imgUrl, i) => (
           <SwiperSlide key={i} className="m-2">
             <Image
-              width={200}
-              height={200}
-              className="w-auto h-auto mx-8"
+              width={400}
+              height={400}
+              className="w-auto h-52 mx-8"
               src={imgUrl}
               alt="gallery"
             />
@@ -103,9 +103,9 @@ export default function SwipperGalleryComponent() {
         {galImgs.map((imgUrl, i) => (
           <SwiperSlide key={i} className="m-2">
             <Image
-              width={200}
-              height={200}
-              className="w-auto h-auto mx-8"
+              width={400}
+              height={400}
+              className="w-auto h-52 mx-8"
               src={imgUrl}
               alt="gallery"
             />

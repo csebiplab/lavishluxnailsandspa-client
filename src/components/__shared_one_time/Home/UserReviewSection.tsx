@@ -34,26 +34,32 @@ const breakpoints = {
 
 const UserReviewSection = () => {
   return (
-    <>
-      <Swiper
-        navigation={true}
-        loop={true}
-        modules={[Navigation, Autoplay]}
-        slidesPerView={4}
-        breakpoints={breakpoints}
-        spaceBetween={50}
-        autoplay={{
-          delay: 3000,
-        }}
-        className=""
-      >
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((__, i) => (
-          <SwiperSlide key={i}>
-            <ReviewCard />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </>
+    <div>
+      <div>
+        <h2 className="text-4xl font-bold textPrimary">Reviews</h2>
+        <div className="w-20 borderBClr mt-2" />
+      </div>
+      <div className="mt-4">
+        <Swiper
+          navigation={true}
+          loop={true}
+          modules={[Navigation, Autoplay]}
+          slidesPerView={4}
+          breakpoints={breakpoints}
+          spaceBetween={50}
+          autoplay={{
+            delay: 3000,
+          }}
+          className=""
+        >
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((__, i) => (
+            <SwiperSlide key={i}>
+              <ReviewCard />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
   );
 };
 

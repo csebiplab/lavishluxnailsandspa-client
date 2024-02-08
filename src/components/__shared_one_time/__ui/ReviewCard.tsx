@@ -2,7 +2,7 @@ import { FaStar } from "react-icons/fa";
 
 export default function ReviewCard() {
   return (
-    <div className="max-w-sm bg-white shadow-lg px-6 py-8">
+    <div className="max-w-sm primaryBgColor shadow-2xl px-6 py-8 rounded-md">
       <div className="flex gap-x-1">
         <FaStar className="w-4 h-4 text-yellow-400" />
         <FaStar className="w-4 h-4 text-yellow-400" />
