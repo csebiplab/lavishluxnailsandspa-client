@@ -9,6 +9,7 @@ import GridPictureAndTextSection from "./GridPictureAndTextSection";
 import HighQualityNailsSection from "./HighQualityNailsSection";
 import LocationMap from "./LocationMap";
 import NailsSaloonDiaries from "./NailsSaloonDiaries";
+import OurService from "./OurService";
 import RevitalizeYourNailsSection from "./RevitalizeYourNailsSection";
 import UserReviewSection from "./UserReviewSection";
 import WhyChooseOurNailSalonsSection from "./WhyChooseOurNailSalonsSection";
@@ -25,6 +26,9 @@ const HomeMainComponent = () => {
       </section>
       <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <FeaturedSection />
+      </section>
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
+        <OurService />
       </section>
       <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <GridPictureAndTextSection />
