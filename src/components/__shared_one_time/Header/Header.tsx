@@ -24,35 +24,72 @@ const Header = () => {
   }, []);
 
   return (
-    <header
-      className={`${styles.secondaryBgColor} ${
-        scrollY > 30 && "sticky top-0"
-      } shadow-md z-50 mx-auto container-custom px-5 md:px-[6.5rem]`}
-    >
-      <nav className="py-4 relative">
-        <div className="flex justify-between items-center">
-          <div className="">
-            <Link href={"/"}>
-              <Image
-                src={brandImg}
-                alt="Lavish Lux Brand Image"
-                width={130}
-                height={24.5}
-                priority={true}
-                // style={{
-                //   width: "auto",
-                //   height: "auto",
-                // }}
-                className="h-auto w-44"
-              />
-            </Link>
+    <>
+      <header
+        className={`primaryBgColor shadow-md z-50 mx-auto container-custom px-5 py-2 md:px-[6.5rem]`}
+      >
+        <nav className="">
+          <div className="flex justify-between items-center">
+            <div>
+              <h2 className="text-2xl font-semibold">Lavish Lux</h2>
+            </div>
+            <div>
+              <div className="flex gap-x-8">
+                <Link href="/"
+                className="hover:underline"
+                >
+                  Blog
+                </Link>
+                <Link href="/"
+                className="hover:underline"
+                >
+                  Careers
+                </Link>
+                <Link href="/"
+                className="hover:underline"
+                >
+                  Testimonials 
+                </Link>
+                <Link href="/"
+                className="hover:underline"
+                >
+                  Contact Us
+                </Link>
+              </div>
+            </div>
           </div>
-          {/* For Desktop View */}
-          <div className="">
-            <AnimatedBorderNav />
-          </div>
+        </nav>
+      </header>
+      <header
+        className={`${styles.secondaryBgColor} ${
+          scrollY > 30 && "sticky top-0"
+        } shadow-md z-50 mx-auto container-custom px-5 md:px-[6.5rem]`}
+      >
+        <nav>
+          <div className="py-4 relative">
+            <div className="flex justify-between items-center">
+              <div className="">
+                <Link href={"/"}>
+                  <Image
+                    src={brandImg}
+                    alt="Lavish Lux Brand Image"
+                    width={130}
+                    height={24.5}
+                    priority={true}
+                    // style={{
+                    //   width: "auto",
+                    //   height: "auto",
+                    // }}
+                    className="h-auto w-44"
+                  />
+                </Link>
+              </div>
+              {/* For Desktop View */}
+              <div className="self-end">
+                <AnimatedBorderNav />
+              </div>
 
-          {/* <div className="hidden md:block">
+              {/* <div className="hidden md:block">
             <ul className={`navMenu flex justify-center items-center gap-x-12`}>
               <li className="text-center text-2xl">
                 <Link href="/">About</Link>
@@ -69,55 +106,57 @@ const Header = () => {
             </ul>
           </div> */}
 
-          <div className="cursor-pointer block md:hidden">
-            <div className="flex items-center gap-x-6">
-              <button
-                className={`px-4 py-2 rounded-md text-sm bgBtn textSecondary transition duration-300 ease-in-out`}
+              <div className="cursor-pointer block md:hidden">
+                <div className="flex items-center gap-x-6">
+                  <button
+                    className={`px-4 py-2 rounded-md text-sm bgBtn textSecondary transition duration-300 ease-in-out`}
+                  >
+                    Book Now
+                  </button>
+                  {showMobileMenu ? (
+                    <RxCross1
+                      onClick={() => setShowMobileMenu(!showMobileMenu)}
+                      className="w-6 h-6"
+                    />
+                  ) : (
+                    <RxHamburgerMenu
+                      onClick={() => setShowMobileMenu(!showMobileMenu)}
+                      className="w-6 h-6"
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* For Mobile Veiw*/}
+            <div
+              className={`py-4 bg-white bg-opacity-95 absolute left-0 w-full border-t-2 border-t-cyan-800 z-50 ${
+                showMobileMenu
+                  ? "bottom-2 transition-opacity duration-300 transform translate-y-full min-h-screen"
+                  : "-top-[30rem]"
+              }`}
+            >
+              <ul
+                className={`${styles.navMenu} flex flex-col gap-y-16 justify-center items-center mt-10`}
               >
-                Book Now
-              </button>
-              {showMobileMenu ? (
-                <RxCross1
-                  onClick={() => setShowMobileMenu(!showMobileMenu)}
-                  className="w-6 h-6"
-                />
-              ) : (
-                <RxHamburgerMenu
-                  onClick={() => setShowMobileMenu(!showMobileMenu)}
-                  className="w-6 h-6"
-                />
-              )}
+                <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
+                  <Link href="/">About</Link>
+                </li>
+                <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
+                  <Link href="/">Services</Link>
+                </li>
+                <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
+                  <Link href="/">Booking</Link>
+                </li>
+                <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
+                  <Link href="/">Conatact</Link>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-
-        {/* For Mobile Veiw*/}
-        <div
-          className={`py-4 bg-white bg-opacity-95 absolute left-0 w-full border-t-2 border-t-cyan-800 z-50 ${
-            showMobileMenu
-              ? "bottom-2 transition-opacity duration-300 transform translate-y-full min-h-screen"
-              : "-top-[25rem]"
-          }`}
-        >
-          <ul
-            className={`${styles.navMenu} flex flex-col gap-y-16 justify-center items-center mt-10`}
-          >
-            <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
-              <Link href="/">About</Link>
-            </li>
-            <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
-              <Link href="/">Services</Link>
-            </li>
-            <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
-              <Link href="/">Booking</Link>
-            </li>
-            <li className="px-5 border-b border-b-gray-700 text-center text-2xl">
-              <Link href="/">Conatact</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </>
   );
 };
 

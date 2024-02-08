@@ -16,6 +16,7 @@ const AnimatedBorderNav = () => {
         <Link className="nav-link nav-link-fade-up" href="#">
           Contact
         </Link>
+        <button className="py-2 px-8 bgBtn text-white">Book Now</button>
       </div>
     </div>
   );
