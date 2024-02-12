@@ -32,4 +32,13 @@ export const flowbiteTheme: CustomFlowbiteTheme = {
       },
     },
   },
+  textInput: {
+    field: {
+      input: {
+        colors: {
+          gray: "bg-white textPrimary",
+        },
+      },
+    },
+  },
 };

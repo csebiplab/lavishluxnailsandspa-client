@@ -2,6 +2,7 @@ import SwipperGalleryComponent from "../__ui/SwipperGalleryComponent";
 import SwiperHeroSection from "../__ui/SwipperHeroSection";
 import AboutUs from "./AboutUs";
 import BenefitsOfGoodNailSalonsSection from "./BenefitsOfGoodNailSalonsSection";
+import ContactSection from "./ContactSection";
 import FaqAccordian from "./FaqAccordian";
 import FeaturedSection from "./FeaturedSection";
 import GlamourAndRelaxationSection from "./GlamourAndRelaxationSection";
@@ -65,6 +66,9 @@ const HomeMainComponent = () => {
       </section>
       <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <LocationMap />
+      </section>
+      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
+        <ContactSection />
       </section>
     </div>
   );
