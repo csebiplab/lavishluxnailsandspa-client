@@ -31,28 +31,22 @@ const Header = () => {
         <nav className="">
           <div className="flex justify-between items-center">
             <div>
-              <h2 className="text-2xl font-semibold">Lavish Lux</h2>
+              <h4 className="text-base font-semibold">
+                Best Nail Salon Mississauga
+              </h4>
             </div>
             <div>
               <div className="flex gap-x-8">
-                <Link href="/"
-                className="hover:underline"
-                >
+                <Link href="/" className="hover:underline">
                   Blog
                 </Link>
-                <Link href="/"
-                className="hover:underline"
-                >
+                <Link href="/" className="hover:underline">
                   Careers
                 </Link>
-                <Link href="/"
-                className="hover:underline"
-                >
-                  Testimonials 
+                <Link href="/" className="hover:underline">
+                  Testimonials
                 </Link>
-                <Link href="/"
-                className="hover:underline"
-                >
+                <Link href="/" className="hover:underline">
                   Contact Us
                 </Link>
               </div>
