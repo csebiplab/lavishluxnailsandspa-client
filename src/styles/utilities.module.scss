@@ -51,6 +51,30 @@
   color: $icon-color;
 }
 
+.cursor-noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// Component styles
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hero-h1 {
+  font-size: 45px;
+  line-height: 52px;
+}
+
 .navMenu {
   li {
     color: $text-primary;
@@ -136,8 +160,14 @@
   font-size: 18px;
 }
 
-
 // Media queries for extra large screen
+@media only screen and (max-width: 768px) {
+  .hero-h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
 @media only screen and (min-width: 1536px) {
   .container-custom {
     max-width: 1536px;

@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function SwiperHeroSection() {
   return (
-    <div className="">
+    <div className="cursor-noselect">
       <Swiper loop={true} navigation={true} modules={[Navigation]} className="">
         <SwiperSlide>
           <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-x-8 gap-y-4 w-full">
@@ -25,7 +25,7 @@ export default function SwiperHeroSection() {
                 className="h-atuo w-full md:h-[32rem]"
               />
             </div>
-            <div className="flex items-center h-full w-full md:w-3/4">
+            <div className="flex items-center h-full w-full">
               <BookNow />
             </div>
           </div>
