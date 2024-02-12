@@ -56,11 +56,11 @@ const Header = () => {
       </header>
       <header
         className={`${styles.secondaryBgColor} ${
-          scrollY > 30 && "sticky top-0"
+          scrollY > 30 ? "sticky top-0 py-2" : "py-4"
         } shadow-md z-50 mx-auto container-custom px-5 md:px-[6.5rem]`}
       >
         <nav>
-          <div className="py-4 relative">
+          <div className="relative">
             <div className="flex justify-between items-center">
               <div className="">
                 <Link href={"/"}>
