@@ -66,7 +66,7 @@ const BenefitsOfGoodNailSalonsSection = () => {
   return (
     <div>
       <div className="mx-auto mb-8">
-        <h2 className={`title textPrimary`}>
+        <h2 className={`title textPrimary font-semibold`}>
           Benefits of good nail salons in Mississauga
         </h2>
         <div className="sm-bb" />
