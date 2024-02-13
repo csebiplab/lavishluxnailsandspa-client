@@ -3,15 +3,23 @@ import React from "react";
 const GlamourAndRelaxationSection = () => {
   return (
     <div>
-      <h2
+      <div className="w-max mx-auto mb-8">
+        <h2 className={`title font-semibold textPrimary`}>
+          Glamour and Relaxation Collide with
+          <br />
+          Mississauga Nails and Spa
+        </h2>
+        <div className="sm-bb" />
+      </div>
+      {/* <h2
         className={`title font-semibold max-w-fit mx-auto flex justify-center textPrimary borderBClr text-center`}
       >
         Glamour and Relaxation Collide with
         <br />
         Mississauga Nails and Spa
-      </h2>
-      <div className="mt-2 py-6">
-        <div className="text-xl leading-9 textPrimary flex flex-col md:flex-row justify-between items-center mx-auto gap-8 w-full text-justify">
+      </h2> */}
+      <div className="pb-6">
+        <div className="text-xl leading-8 textPrimary flex flex-col md:flex-row justify-between mx-auto gap-8 w-full text-justify font-medium">
           <p>
             Indulge in the perfect fusion of glamour and relaxation at Lavish
             Lux Nails & Spa. As you step into our chic and welcoming sanctuary,

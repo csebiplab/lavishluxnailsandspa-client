@@ -10,12 +10,11 @@ import Link from "next/link";
 const OurService = () => {
   return (
     <div>
-      <h2
-        className={`title font-semibold max-w-fit mx-auto flex justify-center textPrimary borderBClr`}
-      >
-        Our Services
-      </h2>
-      <div className="mt-6">
+      <div className="w-max mx-auto mb-8">
+        <h2 className={`title font-semibold textPrimary`}>Our Services</h2>
+        <div className="sm-bb" />
+      </div>
+      <div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-x-52 md:gap-y-20">
           <div className="w-full flex flex-col items-center">
             <Image

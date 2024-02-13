@@ -8,11 +8,14 @@ const NailsSaloonDiaries = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 textPrimary">
       <div className="">
-        <h2 className={`title textPrimary`}>
-          <span className="font-semibold">Nails Salon Diaries:</span> Where
-          Beauty Meets Precision
-        </h2>
-        <ol className="list-decimal list-inside marker:text-red-700 marker:font-extrabold mt-2 flex flex-col gap-y-2 text-xl">
+        <div className="w-max mx-auto mb-8">
+          <h2 className={`title textPrimary`}>
+            <span className="font-semibold">Nails Salon Diaries:</span> Where
+            Beauty Meets Precision
+          </h2>
+          <div className="sm-bb" />
+        </div>
+        <ol className="list-decimal list-inside mt-2 flex flex-col gap-y-2 text-xl">
           <li>
             <span className="font-semibold text-2xl">
               Tailored Treatments for Healthy Nails:

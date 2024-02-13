@@ -18,11 +18,11 @@ const GridPictureAndTextSection = () => {
             />
           </div>
           <div className="textPrimary flex flex-col justify-center items-center gap-y-6 w-full">
-            <div>
-              <h2 className="title font-semibold self-start">
+            <div className="mx-auto">
+              <h2 className={`title font-semibold`}>
                 Is the best nail salon costly?
               </h2>
-              <div className="w-24 h-1 borderClr primaryBgColor" />
+              <div className="sm-bb" />
             </div>
             <p className="text-base">
               The notion of the "best" nail salon being costly is subjective and
@@ -66,11 +66,11 @@ const GridPictureAndTextSection = () => {
             />
           </div>
           <div className="textPrimary flex flex-col justify-center items-center gap-y-6 w-full order-1">
-            <div>
-              <h2 className="title font-semibold self-start">
-                Designed your nails with the best spa in Mississauga
+            <div className="mx-auto">
+              <h2 className={`title font-semibold self-start`}>
+                Designed your nails with the best spa in Mississauga{" "}
               </h2>
-              <div className="w-24 h-1 borderClr primaryBgColor" />
+              <div className="sm-bb" />
             </div>
             <p className="text-base">
               Indulge in the ultimate pampering experience at Lavish Lux Nails &
@@ -115,7 +115,7 @@ const GridPictureAndTextSection = () => {
                 <span className="font-semibold">Nail Artistry and Beyond:</span>{" "}
                 Why Nail Salons Deserve Your Attention?
               </h2>
-              <div className="w-24 h-1 borderClr primaryBgColor" />
+              <div className="sm-bb" />
             </div>
             <p className="text-base">
               Nail artistry has evolved into a captivating form of

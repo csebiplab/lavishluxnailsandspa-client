@@ -4,12 +4,13 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <div className="">
-      <h2
-        className={`title font-semibold max-w-fit mx-auto flex justify-center textPrimary borderBClr`}
-      >
-        About Us
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 mt-4">
+      <div className="w-max mx-auto mb-8">
+        <h2 className={`title font-semibold textPrimary text-center`}>
+          About Us
+        </h2>
+        <div className="sm-bb" />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6">
         <div className="w-full">
           <Image
             src={AboutUsImg}
@@ -19,7 +20,7 @@ const AboutUs = () => {
           />
         </div>
         <div className="w-full px-2">
-          <article className="drop-cap w-full text-justify leading-7 text-18px">
+          <p className="drop-cap w-full text-justify leading-7 text-18px">
             Lavish Lux Nails & Spa stands as the epitome of indulgence and
             excellence in the heart of Mississauga, earning its reputation as
             the best nail salon in the area. This luxurious haven redefines the
@@ -32,7 +33,7 @@ const AboutUs = () => {
             nails. Step into Lavish Lux Nails & Spa for a pampering session that
             goes beyond expectations, setting a new standard for elegance and
             sophistication in Mississauga's thriving beauty scene.
-          </article>
+          </p>
           {/* <button className={`mt-12 bgBtn textSecondary px-4 py-2 rounded-md`}>
             Know More...
           </button> */}
