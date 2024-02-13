@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import HeroBanner from "@/assets/images/lavish-hero-banner.jpg";
+import HeroBanner2 from "@/assets/images/lavish-nails-saloon-diaries.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -18,7 +18,7 @@ export default function SwiperHeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-x-8 gap-y-4 w-full">
             <div className="flex justify-center md:justify-end">
               <Image
-                src={HeroBanner}
+                src={HeroBanner2}
                 alt="Lavish Hero Banner"
                 height={1000}
                 width={600}
