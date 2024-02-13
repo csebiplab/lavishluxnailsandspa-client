@@ -109,7 +109,7 @@ export default function FaqAccordian() {
           </AccordionPanel>
         </Accordion>
         <div className="mt-1">
-          <p className="text-xl textPrimary font-semibold">
+          <p className="text-base textPrimary font-semibold">
             <span className="text-yellow-600">*</span> Remember to contact the
             specific nail salon for the most accurate and up-to-date
             information.

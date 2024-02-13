@@ -23,12 +23,12 @@ export const flowbiteTheme: CustomFlowbiteTheme = {
     title: {
       base: "flex w-full items-center justify-between first:rounded-t-lg last:rounded-b-lg py-5 px-5 text-left font-medium text-gray-600 dark:text-gray-400",
       flush: {
-        off: "hover:bg-yellow-600",
+        off: "hover:bg-[#fad5ce]",
         on: "bg-transparent",
       },
       open: {
         off: "",
-        on: "text-gray-100 bg-yellow-600",
+        on: "text-gray-900 font-bold bg-[#fad5ce]",
       },
     },
   },
