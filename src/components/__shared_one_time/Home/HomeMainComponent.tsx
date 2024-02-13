@@ -61,7 +61,7 @@ const HomeMainComponent = () => {
       <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <SwipperGalleryComponent />
       </section>
-      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
+      <section className="my-12 mx-auto">
         <UserReviewSection />
       </section>
       <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
