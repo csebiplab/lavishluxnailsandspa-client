@@ -37,16 +37,16 @@ const Header = () => {
             </div>
             <div>
               <div className="flex gap-x-8">
-                <Link href="/" className="hover:underline">
+                <Link href="/" className="hover:underline font-medium">
                   Blog
                 </Link>
-                <Link href="/" className="hover:underline">
+                <Link href="/" className="hover:underline font-medium">
                   Careers
                 </Link>
-                <Link href="/" className="hover:underline">
+                <Link href="/" className="hover:underline font-medium">
                   Testimonials
                 </Link>
-                <Link href="/" className="hover:underline">
+                <Link href="/" className="hover:underline font-medium">
                   Contact Us
                 </Link>
               </div>
