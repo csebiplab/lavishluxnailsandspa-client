@@ -3,8 +3,11 @@ import React from "react";
 const LocationMap = () => {
   return (
     <div>
-      <div className="flex justify-center mb-4">
-        <h3 className="font-bold text-3xl inline borderBClr">Our Locations</h3>
+      <div className="w-max mx-auto mb-8">
+        <h2 className={`title font-semibold textPrimary text-center`}>
+          Our Location
+        </h2>
+        <div className="sm-bb" />
       </div>
       <div className="">
         {/* <aside>aside</aside> */}
