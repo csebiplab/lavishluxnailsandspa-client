@@ -73,47 +73,55 @@ const NailsSaloonDiaries = () => {
   }, [showMore]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 textPrimary">
-      <div className="">
-        <div className="w-max mx-auto mb-8">
-          <h2 className={`title textPrimary`}>
-            <span className="font-semibold">Nails Salon Diaries:</span> Where
-            Beauty Meets Precision
-          </h2>
-          <div className="sm-bb" />
-        </div>
-        <ol className="list-decimal list-inside flex flex-col gap-y-2 text-xl">
-          {showList.map((list) => (
-            <li key={list.id}>
-              <span className="font-extrabold text-base">{list.listTitle}</span>{" "}
-              <span className="text-base font-medium">{list.listDetails}</span>
-            </li>
-          ))}
-
-          <div onClick={() => setShowMore(!showMore)} className="mt-2 inline">
-            {!showMore ? (
-              <button
-                className={`px-4 py-1 rounded-sm bgBtn font-medium text-base textSecondary mx-auto`}
-              >
-                Read More
-              </button>
-            ) : (
-              <button
-                className={`px-4 py-1 rounded-sm bgBtn font-medium text-base textSecondary mx-auto`}
-              >
-                Read Less
-              </button>
-            )}
-          </div>
-        </ol>
+    <div>
+      <div className="mx-auto mb-8">
+        <h2 className={`title textPrimary`}>
+          <span className="font-semibold">Nails Salon Diaries:</span> Where
+          Beauty Meets Precision
+        </h2>
+        <div className="sm-bb" />
       </div>
-      <div className="flex items-center h-full mt-8">
-        <Image
-          src={LavishDiaries}
-          alt="about-us"
-          priority={true}
-          className="mx-auto w-full h-96 rounded-md"
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 textPrimary">
+        <div className="">
+          <ol className="list-decimal list-inside flex flex-col gap-y-2">
+            {showList.map((list) => (
+              <li key={list.id}>
+                <span className="font-extrabold text-base">
+                  {list.listTitle}
+                </span>{" "}
+                <span className="text-base font-medium">
+                  {list.listDetails}
+                </span>
+              </li>
+            ))}
+
+            <div onClick={() => setShowMore(!showMore)} className="mt-2 inline">
+              {!showMore ? (
+                <button
+                  className={`px-4 py-1 rounded-sm bgBtn font-medium text-base textSecondary mx-auto`}
+                >
+                  Read More
+                </button>
+              ) : (
+                <button
+                  className={`px-4 py-1 rounded-sm bgBtn font-medium text-base textSecondary mx-auto`}
+                >
+                  Read Less
+                </button>
+              )}
+            </div>
+          </ol>
+        </div>
+        <div className="flex items-center h-full">
+          <Image
+            src={LavishDiaries}
+            alt="about-us"
+            priority={true}
+            width={400}
+            height={500}
+            className="mx-auto w-full h-96 rounded-md"
+          />
+        </div>
       </div>
     </div>
   );

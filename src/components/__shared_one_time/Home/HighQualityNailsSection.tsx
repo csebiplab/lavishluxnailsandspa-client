@@ -77,7 +77,7 @@ const HighQualityNailsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-5 justify-between gap-x-8 gap-y-4">
           <div className="w-full md:col-span-3">
-            <ul className="list-inside list-disc my-2 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 text-xl w-full textPrimary">
+            <ul className="list-inside list-disc grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 text-xl w-full textPrimary">
               {listContents.map((list) => (
                 <li key={list.id}>
                   <span className="font-extrabold text-base">
