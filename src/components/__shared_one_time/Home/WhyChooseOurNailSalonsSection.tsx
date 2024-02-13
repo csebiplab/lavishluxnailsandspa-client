@@ -6,11 +6,14 @@ const WhyChooseOurNailSalonsSection = () => {
     <div className="flex justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4 h-min">
         <div>
-          <h2 className={`title font-semibold textPrimary`}>
-            Why Choose Our Nail Salons in Mississauga?
-          </h2>
-          <div className="w-1/12 border-b-2 borderClr primaryBgColor mt-3" />
-          <div className="mt-4 textPrimary leading-8">
+          <div className="mx-auto mb-8">
+            <h2 className={`title textPrimary font-semibold`}>
+              Why Choose Our Nail Salons in Mississauga?
+            </h2>
+            <div className="sm-bb" />
+          </div>
+
+          <div className="textPrimary leading-8">
             <p>
               Indulge in the epitome of nail care excellence at our Nail Salons
               in Mississauga. Our commitment to providing an unparalleled
@@ -34,7 +37,7 @@ const WhyChooseOurNailSalonsSection = () => {
             alt="lavish picture"
             width={400}
             height={500}
-            className="h-[30rem] w-full"
+            className="h-full md:h-[34rem] w-full"
           />
         </div>
       </div>

@@ -68,14 +68,14 @@ const RevitalizeYourNailsSection = () => {
     <div className="flex justify-center">
       <div className="w-full">
         <div className="flex flex-col md:flex-row gap-y-3 gap-x-8">
-          <div className="mx-auto mb-8">
+          <div className="mx-auto md:mb-8">
             <h2 className={`title textPrimary`}>
               <span className="font-semibold">Revitalize Your Nails: </span>
               Experience the Magic of Our Nail Spa Haven
             </h2>
             <div className="sm-bb" />
           </div>
-          <p className="text-base mt-8">
+          <p className="text-base md:mt-8">
             <span className="text-yellow-600 mr-1">*</span>
             In our nail spa haven, we don't just offer nail services; we provide
             a holistic experience that combines relaxation, creativity, and
@@ -84,7 +84,7 @@ const RevitalizeYourNailsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 justify-between gap-x-8 gap-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 justify-between gap-x-8 gap-y-4 mt-4 md:mt-0">
           <div className="order-2 w-full md:col-span-3">
             <ul className="list-inside list-disc grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 text-xl w-full textPrimary">
               {listContents.map((list) => (
