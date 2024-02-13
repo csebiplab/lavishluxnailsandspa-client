@@ -7,10 +7,12 @@ const BenefitsOfGoodNailSalonsSection = () => {
 
   return (
     <div>
-      <h2 className={`title textPrimary font-semibold`}>
-        Benefits of good nail salons in Mississauga
-      </h2>
-      <div className="w-20 borderBClr" />
+      <div className="mx-auto mb-8">
+        <h2 className={`title textPrimary`}>
+          Benefits of good nail salons in Mississauga
+        </h2>
+        <div className="sm-bb" />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 textPrimary">
         <div className="order-2">
           <ol className="marker:text-red-700 marker:font-extrabold list-inside list-decimal mt-2 flex flex-col gap-y-2 text-xl">
