@@ -85,7 +85,7 @@ const RevitalizeYourNailsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-5 justify-between gap-x-8 gap-y-4 mt-4 md:mt-0">
-          <div className="order-2 w-full md:col-span-3">
+          <div className="order-1 w-full md:col-span-3">
             <ul className="list-inside list-disc grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 text-xl w-full textPrimary">
               {listContents.map((list) => (
                 <li key={list.id}>
@@ -99,7 +99,7 @@ const RevitalizeYourNailsSection = () => {
               ))}
             </ul>
           </div>
-          <div className="order-1 w-full col-span-2">
+          <div className="order-2 w-full col-span-2">
             <Image
               src={LavishRevitalizeNails}
               alt="lavish picture"

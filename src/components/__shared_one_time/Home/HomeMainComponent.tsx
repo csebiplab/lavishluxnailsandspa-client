@@ -58,10 +58,10 @@ const HomeMainComponent = () => {
       <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
         <WhyChooseOurNailSalonsSection />
       </section>
-      <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">
+      <section className="my-12 mx-auto container-custom">
         <SwipperGalleryComponent />
       </section>
-      <section className="my-12 mx-auto">
+      <section className="my-12 mx-auto container-custom">
         <UserReviewSection />
       </section>
       <section className="my-12 container mx-auto px-5 md:px-[4.33rem]">

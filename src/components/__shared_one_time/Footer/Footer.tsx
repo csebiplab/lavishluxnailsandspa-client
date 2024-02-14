@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className={`primaryBgColor mt-16`}>
+    <footer className={`primaryBgColor mt-16 container-custom`}>
       <div className="container mx-auto px-5 py-8 md:px-16">
         <div className="flex md:block justify-center">
           <div className="flex flex-col md:flex-row justify-center md:justify-between gap-y-4 md:gap-0">
@@ -54,25 +54,22 @@ const Footer = () => {
               <p className="font-bold mb-3">Services</p>
               <div className="flex flex-col gap-y-2">
                 <Link href="/" className="hover:underline">
-                  Sevices1
+                  Manicure
                 </Link>
                 <Link href="/" className="hover:underline">
-                  Services2
+                  Pedicure
                 </Link>
                 <Link href="/" className="hover:underline">
-                  Services3
+                  Waxing
                 </Link>
                 <Link href="/" className="hover:underline">
-                  Services4
+                  Artificial Nails
                 </Link>
                 <Link href="/" className="hover:underline">
-                  Services5
+                  Design
                 </Link>
                 <Link href="/" className="hover:underline">
-                  Services6
-                </Link>
-                <Link href="/" className="hover:underline">
-                  Services7
+                  Additional Services <br /> and Kid (under 10)
                 </Link>
               </div>
             </div>

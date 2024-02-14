@@ -7,7 +7,6 @@ import GalImg4 from "@/assets/images/g4.jpg";
 import GalImg5 from "@/assets/images/g5.jpg";
 import GalImg6 from "@/assets/images/g6.jpg";
 import GalImg7 from "@/assets/images/g7.jpg";
-import GalImg8 from "@/assets/images/g8.jpg";
 
 const galImgs = [
   GalImg1,
@@ -36,8 +35,14 @@ export default function SwipperGalleryComponent() {
 
   return (
     <div>
-      <h2 className="text-4xl font-bold textPrimary">Our Galleries</h2>
-      <div className="w-20 borderBClr mt-1 mb-3" />
+      <div className="container px-5 md:px-[6.3rem]">
+        <div className="w-max mb-8">
+          <h2 className={`title font-semibold textPrimary text-center`}>
+            Galleries
+          </h2>
+          <div className="sm-bb" />
+        </div>
+      </div>
       <Swiper
         className="sample-slider w-full"
         modules={[Autoplay]}
@@ -49,8 +54,8 @@ export default function SwipperGalleryComponent() {
           reverseDirection: true,
           stopOnLastSlide: false,
         }}
-        slidesPerView={7}
-        speed={3000}
+        slidesPerView={5}
+        speed={4000}
         allowTouchMove={false}
         // allowSlideNext={false}
         // allowSlidePrev={false}
@@ -85,9 +90,10 @@ export default function SwipperGalleryComponent() {
           delay: 0,
           pauseOnMouseEnter: false,
           disableOnInteraction: false,
+          stopOnLastSlide: false,
         }}
-        slidesPerView={7}
-        speed={3000}
+        slidesPerView={5}
+        speed={4000}
         allowTouchMove={false}
         // grid={{
         //   rows: 2,
